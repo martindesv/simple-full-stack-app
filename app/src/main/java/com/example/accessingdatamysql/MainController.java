@@ -30,7 +30,6 @@ public class MainController {
 
 	@GetMapping(path="/all")
 	public @ResponseBody Iterable<User> getAllUsers() {
-		System.out.println("hi");
 		// This returns a JSON or XML with the users
 		return userRepository.findAll();
 	}
